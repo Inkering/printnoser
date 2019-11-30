@@ -9,13 +9,7 @@
 		<div class="main">
 				<h1 id="about">~PrintNoser~</h1>
 				<h2>Easy 3D printing analysis</h2>
-				<p class="aboutText">I’m studying at Olin College of Engineering and
-working on <strong>computation</strong> and <strong>design</strong> focused
-projects. Whenever I’m not working on those topics, you can usually find me
-putting ink on paper trying to get some illustrations to be more visually //
-emotionally satisfying. I'm in the midst of trying to figure out emotional,
-rational, and whimsical ties between my craft and my fields of study at
-Olin.</p>
+				<p class="aboutText">This is a printer analysis tool!</p>
 
 				<h1 id="projects">Features</h1>
 				<!-- <ProjectList/> -->
