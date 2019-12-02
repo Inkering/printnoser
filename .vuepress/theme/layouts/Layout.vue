@@ -1,23 +1,14 @@
 <template>
 <div>
 		<Nav/>
-		<!-- <div class="big"> -->
-		<!-- 		<h1 class="title splash">Hi,</h1> -->
-		<!-- 		<h1 class="splash">I'm Dieter</h1> -->
-		<!-- 		<p class="splash">I'm a designer working in an engineering stream </p> -->
-		<!-- </div> -->
 		<div class="main">
 				<h1 id="about">~PrintNoser~</h1>
 				<h2>Easy 3D printing analysis</h2>
 				<p class="aboutText">This is a printer analysis tool! It's called PrintNoser (Noser as in diagnoser)</p>
 
 				<h1 id="projects">Features</h1>
-				<!-- <ProjectList/> -->
-				<ul>
-					<li>Automated Fail detection</li>
-					<li>Stepper health detection</li>
-					<li>Provides on-printer sensor suite</li>
-				</ul>
+
+				<Content/>
 				<h1 id="blog">Documentation and More</h1>
 				<Blog/>
 				<Footer/>
