@@ -12,3 +12,15 @@ G0 Y0.00 ; go to Y=0
 G0 Z0.00 ; go to Z=0
 
 M107 ; turn off fan
+
+G0 X50.00 ; go to X=50
+G0 Y50.00 ; go to Y=50
+
+G0 X100.00 ; go to X
+
+G0 Y100.00 ; go to Y
+
+G0 X50.00 ; go to X
+
+G0 Y50.00 ; go to Y
+
