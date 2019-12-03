@@ -16,9 +16,9 @@ M107 ; turn off fan
 G0 X50.00 ; go to X=50
 G0 Y50.00 ; go to Y=50
 
-G0 X100.00 ; go to X
+G0 X200.00 ; go to X
 
-G0 Y100.00 ; go to Y
+G0 Y200.00 ; go to Y
 
 G0 X50.00 ; go to X
 
