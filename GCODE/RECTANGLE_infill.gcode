@@ -23,7 +23,6 @@ G92 E0.0 ; reset extruder distance position
 G1 F2100 E-0.8
 
 
-
 G0 X50.00 ; go to X=50
 G0 Y50.00 ; go to Y=50
 ; currently should be a little inwards from bottom left corner
@@ -35,3 +34,5 @@ G0 Y200.00 ; go to Y=200 (top right corner of square)
 G0 X50.00 ; go to X=50 (top left corner of square)
 
 G0 Y50.00 ; go to Y=50 (return to bottom left corner of square)
+
+G1 X55.00 Y55.00
