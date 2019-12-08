@@ -75,3 +75,4 @@ $(document).ready(function () {
 @import '../styles/theme.css';
 </style>
 
+<style src="prismjs/themes/prism-tomorrow.css"></style>
