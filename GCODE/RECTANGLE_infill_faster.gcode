@@ -9,11 +9,11 @@ M82 ; absolute extrusion mode
 ; M190 S60 ; wait for bed temp
 ; M109 S215 ; wait for extruder temp
 
+G0 F18000 ; move speed 18000 mm / min
+
 G28 W ; home all without mesh bed level
 ; G80 ; mesh bed leveling
 G28 X0.00 ; home all without mesh bed level
-
-G0 F3000 ; move speed 3000 mm / min
 
 G1 X0.00 ; go to X=0
 G1 Y0.00 ; go to Y=0
