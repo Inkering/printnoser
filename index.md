@@ -22,7 +22,7 @@ A MEMS (Micro-Electro-Mechanical Systems) accelerometer is a small electrical ch
 
 As an aside, in our particular experimental setup, some resources suggest that the smartphone we possess have very high sampling rates which allow for details analysis
 
-https://www.macrumors.com/2014/09/26/iphone-6-6-plus-two-accelerometers/
+<https://www.macrumors.com/2014/09/26/iphone-6-6-plus-two-accelerometers/>
 
 However, the Matlab app restricts sampling to a rate of 100 Hz, and we could not find an app on the Apple App Store which advertises a higher rate of sampling.
 
@@ -84,7 +84,7 @@ Most of these motors, especially hobbyist ones, do not contain an internal feedb
 
 Stepper motor resource:
 
-https://cdn-learn.adafruit.com/downloads/pdf/all-about-stepper-motors.pdf
+<https://cdn-learn.adafruit.com/downloads/pdf/all-about-stepper-motors.pdf>
 
 # Audience
 
