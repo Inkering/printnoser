@@ -1,9 +1,15 @@
 /* Type */
+
+::selection {
+	color: white;
+	background: hsl(260.7, 60.6%, 51.2%);
+}
+
 h1,h2,h3,h4,h5 {
-		font-family: 'Goudy Bookletter 1911', serif;
+		font-family: 'Poppins', serif;
 }
 div, p {
-		font-family: 'Lato', sans-serif;
+		font-family: 'Gelasio', sans-serif;
 		line-height: 2rem;
 		font-size: 1.2rem;
 }
@@ -79,11 +85,11 @@ article img {
 }
 a {
 	text-decoration: none;
-	color: #2aa1c0;
+	color: hsl(260.7, 60.6%, 51.2%);
 }
 
 a:hover {
-	color: #0e647d;
+	color: hsl(260.7, 60.6%, 27%);
 }
 table {
 	border-collapse: collapse;
