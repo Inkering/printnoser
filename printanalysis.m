@@ -1,4 +1,4 @@
-function [normoutput, xoutput, youtput, zoutput] = printanalysis(data)
+function [normoutput, xoutput, youtput, zoutput, frange] = printanalysis(data)
 % function documentation
 
 % get the input signals we desie for the fft
@@ -11,7 +11,7 @@ x4 = data(3,:);
 Fs = 100;
 
 % group of inputs
-inputs = [x1' x2' x3' x4']
+inputs = [x1' x2' x3' x4'];
 
 % remove the data mean
 % one result is that gravity gets removed and the data gets centered
@@ -22,7 +22,7 @@ N = size(inputs);
 N = N(1);
 
 % calculate frequency range based on sample rate and data size
-%f = linspace(-Fs/2, Fs/2 - Fs/N, N) + Fs/(2*N)*mod(N, 2);
+f = linspace(-Fs/2, Fs/2 - Fs/N, N) + Fs/(2*N)*mod(N, 2);
 
 % perform ffts
 F1 = fft(inputs(:,1));
@@ -35,5 +35,5 @@ normoutput = F1;
 xoutput = F2;
 youtput = F3;
 zoutput = F4;
-
+frange = f';
 end
