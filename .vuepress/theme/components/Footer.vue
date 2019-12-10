@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div>Enjoy! Built with ❤️ by Oliners</div>
+    <div>Enjoy! Built with ❤️ by Sam & Dieter</div>
   </footer>
 </template>
 

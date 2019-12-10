@@ -21,10 +21,15 @@ The fourier transform offers a method for decomposing a signal into a collection
 of frequencies contained within it. We can use this. technique to seperate out
 different behaviours. In its discrete form, it presented as:
 
-$Y(k) = \sum_{j=1}^{n} X(j)W_{n}^{(j-1)(k-l)} = 1$
+$Y(k) = \sum_{j=1}^{n} X(j)W_{n}^{(j-1)(k-l)}$
 
+$X(j) = \frac{1}{n}\sum_{k=1}^{n} X(j)W_{n}^{-(j-1)(k-l)}$
 
+where,
 
+$W_{n} = e^{\frac{(-2\pi i)}{n}}$
+
+*source <https://www.mathworks.com/help/matlab/ref/fft.html>*
 ## MEMS accelerometer
 
 A MEMS (Micro-Electro-Mechanical Systems) accelerometer is a small electrical
@@ -43,7 +48,7 @@ find an app on the Apple App Store which advertises a higher rate of sampling.
 
 ## Smartphone Data Collection
 
-* smart phone axes
+![Photo of axes of a smartphone](axes.png)
 
 For this experiment, and the project in general, we placed the phone screen up
 on the stepper motor which is located on the print head.
@@ -51,11 +56,12 @@ on the stepper motor which is located on the print head.
 As a primary tool for this project, we are using a smartphone which has the
 Matlab app installed to log accelerometer data. We are then able to process this
 data in Matlab to distinguish between functioning and malfunctioning
-prints. This system provides an easy to use interface with the MEMS sensor in
+prints. This system provides an easy to use  with the MEMS sensor in
 the smartphone, which is oriented in the smartphone as shown above.
 
 ## 3D printers
-* printer image
+
+![Photo of prusa printer](printer.jpg)
 
 A Prusa i3 MK3 3d printer. One of the models which we use frequently at Olin and
 one which is both popular and easy to modify or adapt to one's needs.
