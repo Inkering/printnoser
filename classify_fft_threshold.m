@@ -1,6 +1,9 @@
 function [success, level] = classify_fft_threshold(data, threshold)
 % Uses a basic outlier-reducing threshold to diagnose print fails
 
+d = round(length(data)/6);
+data = data(d:end-d);
+
 if nargin < 2 % if not passed a threshold
     threshold = 0.02; % set default threshold
 end
