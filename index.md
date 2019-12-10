@@ -14,10 +14,11 @@ you can monitor from afar!
 
 ## Purpose
 
-We built a diagnosis tool for identifying and alerting print farm managers and
-makerspace employees of 3D print failures.
+We sought to evaluate the effectiveness of print head acceleration as a
+diagnosis tool for identifying and alerting print farm managers and makerspace
+employees of 3D print failures.
 
-Anyone who uses 3D printers on a regular basis can benefit from the introduction
+Anyone who uses 3D printers on a regular basis could benefit from the introduction
 of this tool into their printing process. In particular, anyone who is
 responsible for managing a large number of printers, or who services and
 maintains 3d printers as a small portion of their overall duties. People working
@@ -36,38 +37,98 @@ students cannot afford.
 
 **[Check out some more of the math, programming,  and context  behind it](./background.md)**
 
+**Check out the code source for *even* more details:** **<https://github.com/inkering/printnoser>**
+
 ### The mount
 
-<img class="profile2" src="experiment.jpg" alt="picture of phone on printer during experiment">
+<img class="print1" src="experiment.jpg" alt="picture of phone on printer during experiment">
 
-*Our prototype experimental setup, featuring a smart phone and a prusa printer*
+*Figure 1: Our prototype experimental setup, featuring a smart phone and a prusa printer*
 
-<img class="profile1" src="printer_face_on.png" alt="Picture of printer front">
+<img class="print1" src="printer_face_on.png" alt="Picture of printer front">
 
-*A front view of the axes of our system*
+*Figure 2: A front view of the axes of our system*
 
 <div class="profilecontainer">
 	<div class="profile">
-		<img class="profile2" src="printer_top.png" alt="Picture of printer top">
+		<img class="print2" src="printer_top.png" alt="Picture of printer top">
 
 
- *top view of the axes of our system*
+ *Figure 3: top view of the axes of our system*
 
 </div>
 	<div class="profile">
-		<img class="profile2" src="printer_perspective.png" alt="3/4 view of printer">
+		<img class="print2" src="printer_perspective.png" alt="3/4 view of printer">
 
- *top view of the axes of our system*
+ *Figure 4: top view of the axes of our system*
 
 </div>
 </div>
 
-Green represents the y-axis, Red represents the x-axis, and Blue represents the z-axis
+For figures 2 through 4,  **green** represents the y-axis, **red** represents the
+x-axis, and **blue** represents the z-axis. The smaller arrows indicate the
+coordinate system of the phone, and the larger arrows indicate the coordinate
+system of the 3D printer control system.
 
 ## Outputs
 
-* analysis plots
-* failure status indicator
+### Threshold Analysis Algorithm
+
+<div class="figuredisplay">
+	<div class="figure-container-main">
+		<img class="figure-main" src="analysis/line.png" alt="Picture of printer top">
+
+*Figure 5: A successful print of a line*
+
+</div>
+	<div class="figure-container-main">
+		<img class="figure-main" src="analysis/oops I drove the printer through the line rectangle phone dropped.png" alt="3/4 view of printer">
+
+*Figure 5: A failed print of a rectangle*
+
+</div>
+</div>
+
+For our first method of analysis, we developed a tunable layer of thresholding
+on the input signal. This type of failure detection is broad, but works well for
+jerky or catastrophic failures. In figure 1 we correctly determined a successful
+print and in figure two we detect a failed print situation due to a significant
+irregularity in the signal.
+
+**[An appendix of our analyzed data is available here (fair warning, lots of data!)](./appendix.md)**
+
+### FFT Threshold Algorithm
+
+This method did not work, because high amplitude does not equate consistently to
+a failure mode. Narrowing to specific frequency ranges as a method of filtering
+also does not work well, because after a large amplitude failure, the print head
+often experiences some sort of higher frequency oscillation, which shifts it up
+and down the spectrum depending on the error.
+
+<div class="figuredisplay" style="flex-wrap: nowrap;">
+	<div class="figure-container-main">
+	<img class="figure-main" src="analysis/houseprint.png" alt="Picture of printer top">
+
+
+*Figure 6: A failed print of a house shape*
+
+
+</div> <p style="float:right; width: 50%">In Figure 6, this phenomena is shown
+	in the signal FFT plot. Particularly, where the FFT output spikes around the
+	30 Hz range. Rather than providing a clear and predicable low frequency
+	spike, the FFT analysis output is both noisey and, relative to the system,
+	high frequency.</p>
+
+</div>
+
+### Linear Regression Algorithm
+
+Our next attempt was to perform a linear regression process on the output of the
+FFT in order to look at trends in the shape of the data. Our hypothesis was that
+successful prints would be weighted towards higher frequency data and failed
+prints would be weighted towards lower frequencies. As a result the slope of the
+regression should determine the status of the print. Potentially, it even be
+calculated as the print runs.
 
 ## Made by
 <div class="profilecontainer">
@@ -100,6 +161,6 @@ Green represents the y-axis, Red represents the x-axis, and Blue represents the 
 
 The next steps of this project will be to improve the user experience and
 software integration. Additionally, we will work to increase the number of
-different failure modes which we can detect, including being able to
-detect potential decreases in print quality such as miniscule stepper failures.
+different failure modes which we can detect, including being able to detect
+potential gradual decreases in print quality such as miniscule stepper failures.
 	

@@ -7,13 +7,11 @@ emoji:
 
 [[toc]]
 
-# Concepts
+# Concepts & Background
 
 ## Frequency Analysis
 
 Frequency analysis is the process under which we can determine patterns of oscillation of a system, such as an object repeatedly jittering or moving in any repeatable way. Mathematical techniques, including the Fourier transform, allow us to determine what speeds of oscillation are present in a signal and how much there is. Based on this information, we can frequently draw conclusions about the nature of a physical phenomena.
-
-# Background
 
 ## Fourier transforms → FFT
 
@@ -38,7 +36,7 @@ larger versions of such a system, these chips allow electrical devices like
 smartphones to measure their acceleration in multiples axes.
 
 As an aside, in our particular experimental setup, some resources suggest that
-the smartphone we possess have very high sampling rates which allow for details
+the smartphone we possess have very high sampling rates which allow for detailed
 analysis
 
 <https://www.macrumors.com/2014/09/26/iphone-6-6-plus-two-accelerometers/>
@@ -49,6 +47,9 @@ find an app on the Apple App Store which advertises a higher rate of sampling.
 ## Smartphone Data Collection
 
 ![Photo of axes of a smartphone](axes.png)
+
+*source: <https://developer.apple.com/>*
+
 
 For this experiment, and the project in general, we placed the phone screen up
 on the stepper motor which is located on the print head.
@@ -62,6 +63,7 @@ the smartphone, which is oriented in the smartphone as shown above.
 ## 3D printers
 
 ![Photo of prusa printer](printer.jpg)
+*source: <https://blog.prusaprinters.org>* 
 
 A Prusa i3 MK3 3d printer. One of the models which we use frequently at Olin and
 one which is both popular and easy to modify or adapt to one's needs.

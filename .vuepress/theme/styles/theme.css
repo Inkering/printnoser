@@ -81,18 +81,45 @@ h2:first-of-type {
 	border-radius: 50%;
 }
 .profile1 {
-	width:80%;
+	width:50%;
 	border-radius: 5%;
 }
 .profile2 {
-	width:80%;
+	width:50%;
+	border-radius: 5%;
+}
+.print1 {
+	width:100%;
+	border-radius: 5%;
+}
+.print2 {
+	width:100%;
 	border-radius: 5%;
 }
 .profile {
-	width: 100%;
+	width: 50%;
 }
 .profilecontainer {
 	display: flex;
+	flex-wrap: wrap;
+}
+.figure {
+	width:100%;
+	border-radius: 5%;
+}
+.figure-main {
+	width:100%;
+	border-radius: 5%;
+}
+.figure-container {
+	width: 100%;
+}
+.figure-container-main {
+	width: 50%;
+}
+.figuredisplay {
+	display: flex;
+	flex-wrap: wrap;
 }
 .pageTitle {
 		font-size: 3rem;
