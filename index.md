@@ -159,7 +159,7 @@ a box with dense infill at 300mm/s travel speed](https://github.com/Inkering/pri
 	<img class="figure-main" src="analysis/fourier/FAIL Printer self-collision.png" alt="Picture of printer top">
 
 
-*Figure 8: A failed print of a house shape*
+*Figure 8: A failed print in which the printhead collided with an existing line on the bed.*
 
 
 </div> <p style="float:right; width: 50%">In Figure 6, this phenomena is shown
@@ -177,7 +177,7 @@ a box with dense infill at 300mm/s travel speed](https://github.com/Inkering/pri
 	<img class="figure-main" src="analysis/fourier/Rectangle With Infill Faster 2.png" alt="Picture of printer top">
 
 
-*Figure 9: A failed print of a house shape*
+*Figure 9: A succeeded print of a rectangle with infill going quickly.*
 
 
 </div> <p style="float:right; width: 50%">In Figure 6, this phenomena is shown
@@ -191,6 +191,12 @@ a box with dense infill at 300mm/s travel speed](https://github.com/Inkering/pri
 </div>
 
 ## Conclusion
+
+By exploring a number of different classification techniques, we determined that
+performing a linear regression on fourier acceleration data is a promising
+method for 3D print analysis. In order to get there, we learned that falling
+back on simple thresholded classification isn't enough to get a good picture of
+how a 3D print went, and results in a number of incorrect classifications in our dataset.
 
 ## Made by
 <div class="profilecontainer">
@@ -222,7 +228,8 @@ a box with dense infill at 300mm/s travel speed](https://github.com/Inkering/pri
 ## What's Next
 
 The next steps of this project will be to improve the user experience and
-software integration. Additionally, we will work to increase the number of
-different failure modes which we can detect, including being able to detect
-potential gradual decreases in print quality such as miniscule stepper failures.
+software integration of our tool. Additionally, we will work to increase the
+number of different failure modes which we can detect, including being able to
+detect potential gradual decreases in print quality such as miniscule stepper
+failures.
 	
