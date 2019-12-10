@@ -159,7 +159,7 @@ a box with dense infill at 300mm/s travel speed](https://github.com/Inkering/pri
 	<img class="figure-main" src="analysis/fourier/FAIL Printer self-collision.png" alt="Picture of printer top">
 
 
-*Figure 8: A failed print of a house shape*
+*Figure 8: A failed print in which the printhead collided with an existing line on the bed.*
 
 
 </div> <p style="float:right; width: 50%">In Figure 8, we see the FFT plot
@@ -177,7 +177,7 @@ that the margin of detection is particularly wide (~200%).</p>
 	<img class="figure-main" src="analysis/fourier/Rectangle With Infill Faster 2.png" alt="Picture of printer top">
 
 
-*Figure 9: A failed print of a house shape*
+*Figure 9: A succeeded print of a rectangle with infill going quickly.*
 
 
 </div> <p style="float:right; width: 50%">In Figure 9, we see a successful print of a
@@ -191,6 +191,12 @@ diagnose this dataset as a successful print.</p>
 </div>
 
 ## Conclusion
+
+By exploring a number of different classification techniques, we determined that
+performing a linear regression on fourier acceleration data is a promising
+method for 3D print analysis. In order to get there, we learned that falling
+back on simple thresholded classification isn't enough to get a good picture of
+how a 3D print went, and results in a number of incorrect classifications in our dataset.
 
 ## Made by
 <div class="profilecontainer">
@@ -222,7 +228,8 @@ diagnose this dataset as a successful print.</p>
 ## What's Next
 
 The next steps of this project will be to improve the user experience and
-software integration. Additionally, we will work to increase the number of
-different failure modes which we can detect, including being able to detect
-potential gradual decreases in print quality such as miniscule stepper failures.
+software integration of our tool. Additionally, we will work to increase the
+number of different failure modes which we can detect, including being able to
+detect potential gradual decreases in print quality such as miniscule stepper
+failures.
 	
