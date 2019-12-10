@@ -190,6 +190,8 @@ a box with dense infill at 300mm/s travel speed](https://github.com/Inkering/pri
 
 </div>
 
+**[An appendix of our analyzed data is available here (fair warning, lots of data!)](./appendix-fourier.md)**
+
 ## Conclusion
 
 By exploring a number of different classification techniques, we determined that
