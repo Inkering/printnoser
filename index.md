@@ -36,6 +36,8 @@ Our tool is based on data from an accelerometer mounted on the print head of a
 printer, removing the barriers of expensive tooling that makerspaces and
 students cannot afford.
 
+**[Read the GCODE files we wrote for testing](./GCODE.md)**
+
 **[Check out some more of the math, programming,  and context  behind it](./background.md)**
 
 **Check out the source code for *even* more details:** **<https://github.com/inkering/printnoser>**
