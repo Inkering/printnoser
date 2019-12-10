@@ -76,13 +76,13 @@ system of the 3D printer control system.
 
 <div class="figuredisplay">
 	<div class="figure-container-main">
-		<img class="figure-main" src="analysis/line.png" alt="Picture of printer top">
+		<img class="figure-main" src="analysis/Straight line 1.png" alt="Picture of printer top">
 
 *Figure 5: A successful print of a line*
 
 </div>
 	<div class="figure-container-main">
-		<img class="figure-main" src="analysis/oops I drove the printer through the line rectangle phone dropped.png" alt="3/4 view of printer">
+		<img class="figure-main" src="analysis/FAIL Printer self-collision.png" alt="3/4 view of printer">
 
 *Figure 5: A failed print of a rectangle*
 
@@ -107,7 +107,7 @@ and down the spectrum depending on the error.
 
 <div class="figuredisplay" style="flex-wrap: nowrap;">
 	<div class="figure-container-main">
-	<img class="figure-main" src="analysis/houseprint.png" alt="Picture of printer top">
+	<img class="figure-main" src="analysis/FAIL While Printing a House Outline.png" alt="Picture of printer top">
 
 
 *Figure 6: A failed print of a house shape*
