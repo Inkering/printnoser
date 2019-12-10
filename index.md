@@ -136,6 +136,7 @@ on the error.
 	includes virtually no other noise.</p>
 
 </div>
+
 ### Linear Regression Algorithm
 
 Our next attempt was to perform a linear regression process on the output of the
