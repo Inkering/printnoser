@@ -105,7 +105,7 @@ Unfortunately, this method breaks down for more complex failure types. It relies
 the type of failure exerting a force greater than gravity for several measurements.
 We eliminate false measurements in this technique by taking several max reading samples and averaging them.
 
-**[An appendix of our analyzed data is available here (fair warning, lots of data!)](./appendix.md)**
+**[An appendix of our analyzed fourier plot data is available here (fair warning, lots of data!)](./appendix.md)**
 
 ### FFT Threshold Algorithm
 
