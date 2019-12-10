@@ -2,7 +2,7 @@
 <div>
 		<Nav/>
 		<div class="main">
-				<img src="nose.png" style="width: 10%;"alt="">
+				<img src="nose-filament.png" style="width: 10%;"alt="">
 				<h1 id="about">~PrintNoser~</h1>
 				<Content/>				
 				<Footer/>
