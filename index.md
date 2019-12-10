@@ -130,6 +130,8 @@ prints would be weighted towards lower frequencies. As a result the slope of the
 regression should determine the status of the print. Potentially, it even be
 calculated as the print runs.
 
+## Conclusion
+
 ## Made by
 <div class="profilecontainer">
 <div class="profile">

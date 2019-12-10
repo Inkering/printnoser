@@ -6,15 +6,15 @@
 						<router-link to="/"><h1 v-on:click="home">PrintNoser</h1></router-link>
 						<h1>//</h1>
 						<!-- <h1 v-on:click="about">About</h1> -->
-						<a href="#purpose"><h1>About</h1></a>
+						<a href="/#purpose"><h1>About</h1></a>
 						<h1>//</h1>
-						<a href="#how-it-works"><h1>How</h1></a>
+						<a href="/#how-it-works"><h1>How</h1></a>
 						<h1>//</h1>
-						<a href="#outputs"><h1>Results</h1></a>
+						<a href="/#outputs"><h1>Results</h1></a>
 						<h1>//</h1>
-						<a href="#made-by"><h1>Us</h1></a>
+						<a href="/#made-by"><h1>Us</h1></a>
 						<h1>//</h1>
-						<a href="#what-s-next"><h1>Next</h1></a>
+						<a href="/#what-s-next"><h1>Next</h1></a>
 				</div>
 		</div>
   </header>
