@@ -16,7 +16,7 @@ Frequency analysis is the process under which we can determine patterns of oscil
 ## Fourier transforms → FFT
 
 The fourier transform offers a method for decomposing a signal into a collection
-of frequencies contained within it. We can use this. technique to seperate out
+of frequencies contained within it. We can use this technique to seperate out
 different behaviours. In its discrete form, it presented as:
 
 $Y(k) = \sum_{j=1}^{n} X(j)W_{n}^{(j-1)(k-l)}$
@@ -57,7 +57,7 @@ on the stepper motor which is located on the print head.
 As a primary tool for this project, we are using a smartphone which has the
 Matlab app installed to log accelerometer data. We are then able to process this
 data in Matlab to distinguish between functioning and malfunctioning
-prints. This system provides an easy to use  with the MEMS sensor in
+prints. This system provides an easy to use MEMS sensor in
 the smartphone, which is oriented in the smartphone as shown above.
 
 ## 3D printers

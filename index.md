@@ -97,8 +97,8 @@ ground system or the 3D printer system.
 
 For our first method of analysis, we developed a tunable layer of thresholding
 on the measured acceleration signal. This type of failure detection is broad, but works well for
-jerky or catastrophic failures. In figure 1 we correctly determined a successful
-print and in figure two we detect a failed print situation due to a significant
+jerky or catastrophic failures. In figure 5 we correctly determined a successful
+print and in figure 6 we detect a failed print situation due to a significant
 irregularity in the signal.
 
 Unfortunately, this method breaks down for more complex failure types. It relies on
@@ -127,7 +127,7 @@ on the error.
 *Figure 7: A failed print of a house shape*
 
 
-</div> <p style="float:right; width: 50%">In Figure 6, this phenomena is shown
+</div> <p style="float:right; width: 50%">In Figure 7, this phenomena is shown
 	in the signal FFT plot. Particularly, where the FFT output spikes around the
 	30 Hz range. Rather than providing a clear and predicable low frequency
 	spike, the FFT analysis output is both noisey and, relative to the system,
