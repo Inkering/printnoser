@@ -198,6 +198,10 @@ method for 3D print analysis. In order to get there, we learned that falling
 back on simple thresholded classification isn't enough to get a good picture of
 how a 3D print went, and results in a number of incorrect classifications in our dataset.
 
+Our final algorithm uses a weighted linear regression of the FFT of accelerometer data
+to predict whether data corresponds to a print fail or success. Of the 18 test datasets
+we have collected so far, the algorithm achieves a 100% success rate.
+
 ## Made by
 <div class="profilecontainer">
 <div class="profile">
@@ -232,4 +236,9 @@ software integration of our tool. Additionally, we will work to increase the
 number of different failure modes which we can detect, including being able to
 detect potential gradual decreases in print quality such as miniscule stepper
 failures.
+
+## Open Source Code
+- [Read the MATLAB Live Script that performs our analysis here, with all output rendered](./analyze_all.pdf)
+- [Read the complete source code, including other analysis functions here](https://github.com/inkering/printnoser)
+- [Read the entire source code of this website here](https://github.com/Inkering/printnoser/tree/website)
 	
