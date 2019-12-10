@@ -90,7 +90,7 @@ ground system or the 3D printer system.
 	<div class="figure-container-main">
 		<img class="figure-main" src="analysis/FAIL Printer self-collision.png" alt="3/4 view of printer">
 
-*Figure 5: A failed print of a rectangle*
+*Figure 6: A failed print of a rectangle*
 
 </div>
 </div>
@@ -124,7 +124,7 @@ on the error.
 	<img class="figure-main" src="analysis/FAIL While Printing a House Outline.png" alt="Picture of printer top">
 
 
-*Figure 6: A failed print of a house shape*
+*Figure 7: A failed print of a house shape*
 
 
 </div> <p style="float:right; width: 50%">In Figure 6, this phenomena is shown
@@ -159,7 +159,7 @@ a box with dense infill at 300mm/s travel speed](https://github.com/Inkering/pri
 	<img class="figure-main" src="analysis/fourier/FAIL Printer self-collision.png" alt="Picture of printer top">
 
 
-*Figure 7: A failed print of a house shape*
+*Figure 8: A failed print of a house shape*
 
 
 </div> <p style="float:right; width: 50%">In Figure 6, this phenomena is shown
@@ -177,7 +177,7 @@ a box with dense infill at 300mm/s travel speed](https://github.com/Inkering/pri
 	<img class="figure-main" src="analysis/fourier/Rectangle With Infill Faster 2.png" alt="Picture of printer top">
 
 
-*Figure 8: A failed print of a house shape*
+*Figure 9: A failed print of a house shape*
 
 
 </div> <p style="float:right; width: 50%">In Figure 6, this phenomena is shown
