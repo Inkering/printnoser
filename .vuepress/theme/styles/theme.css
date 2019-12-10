@@ -69,15 +69,30 @@ h2:first-of-type {
 /* Main Section */
 .main {
 		margin-left: 4rem;
-		max-width: 40rem;
+		max-width: 60rem;
 }
 .logo {
 		width: 10rem;
 		margin-top: 10px;
 }
 /* post styling */
-article img {
-		width:100%;
+.img {
+	width: 100%;
+	border-radius: 50%;
+}
+.profile1 {
+	width:80%;
+	border-radius: 5%;
+}
+.profile2 {
+	width:80%;
+	border-radius: 5%;
+}
+.profile {
+	width: 100%;
+}
+.profilecontainer {
+	display: flex;
 }
 .pageTitle {
 		font-size: 3rem;
@@ -87,6 +102,7 @@ article img {
 #projects {
 		margin-bottom:0px;
 }
+
 a {
 	text-decoration: none;
 	color: hsl(260.7, 60.6%, 51.2%);
