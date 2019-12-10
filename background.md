@@ -9,8 +9,6 @@ emoji:
 
 # Concepts
 
-## Kinematic Analysis
-
 ## Frequency Analysis
 
 Frequency analysis is the process under which we can determine patterns of oscillation of a system, such as an object repeatedly jittering or moving in any repeatable way. Mathematical techniques, including the Fourier transform, allow us to determine what speeds of oscillation are present in a signal and how much there is. Based on this information, we can frequently draw conclusions about the nature of a physical phenomena.
@@ -18,6 +16,14 @@ Frequency analysis is the process under which we can determine patterns of oscil
 # Background
 
 ## Fourier transforms → FFT
+
+The fourier transform offers a method for decomposing a signal into a collection
+of frequencies contained within it. We can use this. technique to seperate out
+different behaviours. In its discrete form, it presented as:
+
+$Y(k) = \sum_{j=1}^{n} X(j)W_{n}^{(j-1)(k-l)} = 1$
+
+
 
 ## MEMS accelerometer
 

@@ -7,14 +7,14 @@ emoji:
 
 # Introducing the printnoser
 
-The printnoser quickly and accurately diagnoses the art of your 3D prints and
+The printnoser quickly and accurately diagnoses  your 3D prints and
 removes the need to constantly baby 3D prints. In the past, it was often
 necessary or tempting to run between your office and your print area, but now
 you can monitor from afar!
 
 ## Purpose
 
-We built a diagnosis tool for identifying and alterting print farm managers and
+We built a diagnosis tool for identifying and alerting print farm managers and
 makerspace employees of 3D print failures.
 
 Anyone who uses 3D printers on a regular basis can benefit from the introduction
@@ -24,7 +24,8 @@ maintains 3d printers as a small portion of their overall duties. People working
 in libraries or maker spaces are often in the position of needing to take care
 of many 3d printers, or many different types of machines at once. Additionally,
 in these situations many different people, some of whom not very familiar with
-the process, use such publicly available devices to manufacture designs.
+the process, use such publicly available devices to manufacture parts. This can
+lead to reduced printer reliability, which we aim to fix.
 
 ## How it works
 
@@ -32,28 +33,36 @@ Our tool is based on data from an accelerometer mounted on the print head of a
 3D printer. Modular and uninstrusive, it can be mounted and calibrated on any
 printer, removing the barriers of expensive tooling that makerspaces and
 students cannot afford.
-* picture of mount
-* render of printer mount
-* picture of experiment in progress
 
-[Check out some more of the path behind it](./background.md)
+**[Check out some more of the math, programming,  and context  behind it](./background.md)**
 
 ### The mount
 
+<img class="profile2" src="experiment.jpg" alt="picture of phone on printer during experiment">
+
+*Our prototype experimental setup, featuring a smart phone and a prusa printer*
+
 <img class="profile1" src="printer_face_on.png" alt="Picture of printer front">
 
+*A front view of the axes of our system*
 
 <div class="profilecontainer">
 	<div class="profile">
 		<img class="profile2" src="printer_top.png" alt="Picture of printer top">
-	</div>
+
+
+ *top view of the axes of our system*
+
+</div>
 	<div class="profile">
 		<img class="profile2" src="printer_perspective.png" alt="3/4 view of printer">
-	</div>
+
+ *top view of the axes of our system*
+
+</div>
 </div>
 
-*Green represents the y-axis, Red represents the x-axis, and Blue represents the
-z-axis*
+Green represents the y-axis, Red represents the x-axis, and Blue represents the z-axis
 
 ## Outputs
 
@@ -91,5 +100,6 @@ z-axis*
 
 The next steps of this project will be to improve the user experience and
 software integration. Additionally, we will work to increase the number of
-different failure modes which we can detect, hopefully eventually being able to
+different failure modes which we can detect, including being able to
 detect potential decreases in print quality such as miniscule stepper failures.
+	

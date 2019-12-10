@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Gelasio|Poppins:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gelasio:400,700|Poppins:700&display=swap');
 @import '../styles/theme.css';
 </style>
 
