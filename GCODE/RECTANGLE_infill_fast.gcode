@@ -40,6 +40,10 @@ G1 Y50.00 ; go to Y=50 (return to bottom left corner of square)
 
 G91 ; switch to relative positioning
 
+
+
+; PRINT INFILL
+
 G1 Y5
 G1 X10
 G1 Y5

@@ -1,4 +1,4 @@
-M82 ;absolute extrusion mode
+;M82 ;absolute extrusion mode
 G21 ; set units to millimeters
 G90 ; use absolute positioning
 M82 ; absolute extrusion mode
