@@ -3,14 +3,12 @@
 		<Nav/>
 		<div class="main">
 				<h1 id="about">~PrintNoser~</h1>
-				<h2>Easy 3D printing analysis</h2>
-				<p class="aboutText">This is a printer analysis tool! It's called PrintNoser (Noser as in diagnoser)</p>
 
 				<!-- <h1 id="projects">Features</h1> -->
 
 				<Content/>				
-				<h1 id="blog">Documentation and More</h1>
-				<Blog/>
+				<!-- <h1 id="blog">Documentation and More</h1>
+				<Blog/> -->
 				<Footer/>
 		</div>
 </div>

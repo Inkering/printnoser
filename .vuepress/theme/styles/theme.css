@@ -4,7 +4,11 @@
 	color: white;
 	background: hsl(260.7, 60.6%, 51.2%);
 }
-
+#about {
+	background: hsl(260.7, 60.6%, 51.2%);
+	color: white;
+	display: inline-block;
+}
 h1,h2,h3,h4,h5 {
 		font-family: 'Poppins', serif;
 }
