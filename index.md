@@ -190,6 +190,8 @@ diagnose this dataset as a successful print.</p>
 
 </div>
 
+**[An appendix of our analyzed data is available here (fair warning, lots of data!)](./appendix-fourier.md)**
+
 ## Conclusion
 
 By exploring a number of different classification techniques, we determined that
