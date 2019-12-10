@@ -17,6 +17,15 @@ you can monitor from afar!
 We built a diagnosis tool for identifying and alterting print farm managers and
 makerspace employees of 3D print failures.
 
+Anyone who uses 3D printers on a regular basis can benefit from the introduction
+of this tool into their printing process. In particular, anyone who is
+responsible for managing a large number of printers, or who services and
+maintains 3d printers as a small portion of their overall duties. People working
+in libraries or maker spaces are often in the position of needing to take care
+of many 3d printers, or many different types of machines at once. Additionally,
+in these situations many different people, some of whom not very familiar with
+the process, use such publicly available devices to manufacture designs.
+
 ## How it works
 
 Our tool is based on data from an accelerometer mounted on the print head of a

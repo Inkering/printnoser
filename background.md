@@ -21,33 +21,52 @@ Frequency analysis is the process under which we can determine patterns of oscil
 
 ## MEMS accelerometer
 
-A MEMS (Micro-Electro-Mechanical Systems) accelerometer is a small electrical chip which features miniaturized versions of mass-spring systems. Similar to larger versions of such a system, these chips allow electrical devices like smartphones to measure their acceleration in multiples axes. 
+A MEMS (Micro-Electro-Mechanical Systems) accelerometer is a small electrical
+chip which features miniaturized versions of mass-spring systems. Similar to
+larger versions of such a system, these chips allow electrical devices like
+smartphones to measure their acceleration in multiples axes.
 
-As an aside, in our particular experimental setup, some resources suggest that the smartphone we possess have very high sampling rates which allow for details analysis
+As an aside, in our particular experimental setup, some resources suggest that
+the smartphone we possess have very high sampling rates which allow for details
+analysis
 
 <https://www.macrumors.com/2014/09/26/iphone-6-6-plus-two-accelerometers/>
 
-However, the Matlab app restricts sampling to a rate of 100 Hz, and we could not find an app on the Apple App Store which advertises a higher rate of sampling.
+However, the Matlab app restricts sampling to a rate of 100 Hz, and we could not
+find an app on the Apple App Store which advertises a higher rate of sampling.
 
 ## Smartphone Data Collection
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2236d3bd-48de-44af-a2df-2c8c97911dc2/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2236d3bd-48de-44af-a2df-2c8c97911dc2/Untitled.png)
+* smart phone axes
 
-For this experiment, and the project in general, we placed the phone screen up on the stepper motor which is located on the print head. 
+For this experiment, and the project in general, we placed the phone screen up
+on the stepper motor which is located on the print head.
 
-As a primary tool for this project, we are using a smartphone which has the Matlab app installed to log accelerometer data. We are then able to process this data in Matlab to distinguish between functioning and malfunctioning prints. This system provides an easy to use interface with the MEMS sensor in the smartphone, which is oriented in the smartphone as shown above.
+As a primary tool for this project, we are using a smartphone which has the
+Matlab app installed to log accelerometer data. We are then able to process this
+data in Matlab to distinguish between functioning and malfunctioning
+prints. This system provides an easy to use interface with the MEMS sensor in
+the smartphone, which is oriented in the smartphone as shown above.
 
 ## 3D printers
+* printer image
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ea1645cc-719d-4cd6-a290-eb99f31ac552/MK3_poster_V6.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ea1645cc-719d-4cd6-a290-eb99f31ac552/MK3_poster_V6.jpg)
+A Prusa i3 MK3 3d printer. One of the models which we use frequently at Olin and
+one which is both popular and easy to modify or adapt to one's needs.
 
-A Prusa i3 MK3 3d printer. One of the models which we use frequently at Olin and one which is both popular and easy to modify or adapt to one's needs.
-
-A 3d printer is a manufacturing device which heats up plastic "filament" and deposits it in programmed locations.
+A 3d printer is a manufacturing device which heats up plastic "filament" and
+deposits it in programmed locations.
 
 ### G-Code
 
-Virtually all FDM 3D printers are controlled using G-Code files, which specify precise movement commands for a 3D printer to follow. We hand-wrote custom G-Code scripts based on Marlin-style G-Code to control the motion of the printer along known shapes that can be defined as parametric curves and analyzed under our motion model. Here is a hand-written G-Code file, documented inline, that moves the extruder in a convenient box, which can be useful in characterizing mid-frequency (~25-50Hz) stepper noise that could indicate a failure:
+Virtually all FDM 3D printers are controlled using G-Code files, which specify
+precise movement commands for a 3D printer to follow. We hand-wrote custom
+G-Code scripts based on Marlin-style G-Code to control the motion of the printer
+along known shapes that can be defined as parametric curves and analyzed under
+our motion model. Here is a hand-written G-Code file, documented inline, that
+moves the extruder in a convenient box, which can be useful in characterizing
+mid-frequency (~25-50Hz) stepper noise that could indicate a failure:
+
 ``` lisp
     M82 ;absolute extrusion mode
     G21 ; set units to millimeters
@@ -77,18 +96,25 @@ Virtually all FDM 3D printers are controlled using G-Code files, which specify p
     
     G0 Y50.00 ; go to Y=50 (return to bottom left corner of square)
 ```
-This G-Code takes advantage of absolute positioning to maintain a record of desired locations of the extruder at each step. We can compare filtered experimental data collected along this path with previous filtered results to diagnose unexpected behaviors.
+
+This G-Code takes advantage of absolute positioning to maintain a record of
+desired locations of the extruder at each step. We can compare filtered
+experimental data collected along this path with previous filtered results to
+diagnose unexpected behaviors.
 
 ## Stepper Motors
 
-Stepper motors are a type of electrical motor which most 3d printers use to operate both the filament feeder and the gantry which moves the print head (which houses the feeder) around. They are composed of wire coils which produce magnetic fields, when, if programmed correctly, rotate a rotor.
+Stepper motors are a type of electrical motor which most 3d printers use to
+operate both the filament feeder and the gantry which moves the print head
+(which houses the feeder) around. They are composed of wire coils which produce
+magnetic fields, when, if programmed correctly, rotate a rotor.
 
-Most of these motors, especially hobbyist ones, do not contain an internal feedback mechanism such as an encoder. As a result, it isn't obvious when a "step" has been skipped in the control of the stepper in most cases. In some systems, people attach encoders to the stepper outputs to track that data and correct for it.
+Most of these motors, especially hobbyist ones, do not contain an internal
+feedback mechanism such as an encoder. As a result, it isn't obvious when a
+"step" has been skipped in the control of the stepper in most cases. In some
+systems, people attach encoders to the stepper outputs to track that data and
+correct for it.
 
 Stepper motor resource:
 
 <https://cdn-learn.adafruit.com/downloads/pdf/all-about-stepper-motors.pdf>
-
-# Audience
-
-Our audience is wide reaching. Anyone who uses 3D printers on a regular basis can benefit from the introduction of this tool into their printing process. In particular, anyone who is responsible for managing a large number of printers, or who services and maintains 3d printers as a small portion of their overall duties. People working in libraries or maker spaces are often in the position of needing to take care of many 3d printers, or many different types of machines at once. Additionally, in these situations many different people, some of whom not very familiar with the process, use such publicly available devices to manufacture designs. 
