@@ -162,13 +162,13 @@ a box with dense infill at 300mm/s travel speed](https://github.com/Inkering/pri
 *Figure 8: A failed print of a house shape*
 
 
-</div> <p style="float:right; width: 50%">In Figure 6, this phenomena is shown
-	in the signal FFT plot. Particularly, where the FFT output spikes around the
-	30 Hz range. Rather than providing a clear and predicable low frequency
-	spike, the FFT analysis output is both noisey and, relative to the system,
-	high frequency. Note that this method is sometimes able to correctly
-	diagnose failed prints, such as in this Figure, but only when the print
-	includes virtually no other noise.</p>
+</div> <p style="float:right; width: 50%">In Figure 8, we see the FFT plot
+and overlaid analysis from a failed print. In this case, the print collided
+with a small piece of previously printed plastic, causing a measurable vibration and
+a complete print failure. In this case, the form of vibrations are relatively subtle,
+and in a similar case the first two methods we tried alone (acceleration threshold and
+FFT threshold) might be unable to detect this type of failure. In this case, we see
+that the margin of detection is particularly wide (~200%).</p>
 
 </div>
 
@@ -180,13 +180,13 @@ a box with dense infill at 300mm/s travel speed](https://github.com/Inkering/pri
 *Figure 9: A failed print of a house shape*
 
 
-</div> <p style="float:right; width: 50%">In Figure 6, this phenomena is shown
-	in the signal FFT plot. Particularly, where the FFT output spikes around the
-	30 Hz range. Rather than providing a clear and predicable low frequency
-	spike, the FFT analysis output is both noisey and, relative to the system,
-	high frequency. Note that this method is sometimes able to correctly
-	diagnose failed prints, such as in this Figure, but only when the print
-	includes virtually no other noise.</p>
+</div> <p style="float:right; width: 50%">In Figure 9, we see a successful print of a
+rectangle with infill. This print is notable because we hand-wrote a GCODE to perform this task at 300mm/s, which is extremely fast. It's generally unlikely that the acceleration values recorded at the corners of this rectangle would happen during typical printing usage.
+because some of the higher-power frequencies are within the low-mid range,
+our FFT threshold algorithm fails and considers this print a failure by a margin of >220%.
+However, since the unusual frequency oscillations are not strongly <em>weighted</em>
+toward the center of the plot, the linear regression fit method is able to correctly
+diagnose this dataset as a successful print.</p>
 
 </div>
 
