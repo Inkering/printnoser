@@ -136,7 +136,6 @@ on the error.
 	includes virtually no other noise.</p>
 
 </div>
-
 ### Linear Regression Algorithm
 
 Our next attempt was to perform a linear regression process on the output of the
@@ -153,6 +152,42 @@ more testing is needed to confirm that the algorithm can successfully diagnose m
 print failures and handle noisier situations like printing support material at high speed.
 Already, the algorithm was able to reliably recognize our most extreme print test ([printing
 a box with dense infill at 300mm/s travel speed](https://github.com/Inkering/printnoser/blob/master/GCODE/RECTANGLE_infill_faster.gcode)) as a successful print task.
+
+<div class="figuredisplay" style="flex-wrap: nowrap;">
+	<div class="figure-container-main">
+	<img class="figure-main" src="analysis/fourier/FAIL Printer self-collision.png" alt="Picture of printer top">
+
+
+*Figure 7: A failed print of a house shape*
+
+
+</div> <p style="float:right; width: 50%">In Figure 6, this phenomena is shown
+	in the signal FFT plot. Particularly, where the FFT output spikes around the
+	30 Hz range. Rather than providing a clear and predicable low frequency
+	spike, the FFT analysis output is both noisey and, relative to the system,
+	high frequency. Note that this method is sometimes able to correctly
+	diagnose failed prints, such as in this Figure, but only when the print
+	includes virtually no other noise.</p>
+
+</div>
+
+<div class="figuredisplay" style="flex-wrap: nowrap;">
+	<div class="figure-container-main">
+	<img class="figure-main" src="analysis/fourier/Rectangle With Infill Faster 2.png" alt="Picture of printer top">
+
+
+*Figure 8: A failed print of a house shape*
+
+
+</div> <p style="float:right; width: 50%">In Figure 6, this phenomena is shown
+	in the signal FFT plot. Particularly, where the FFT output spikes around the
+	30 Hz range. Rather than providing a clear and predicable low frequency
+	spike, the FFT analysis output is both noisey and, relative to the system,
+	high frequency. Note that this method is sometimes able to correctly
+	diagnose failed prints, such as in this Figure, but only when the print
+	includes virtually no other noise.</p>
+
+</div>
 
 ## Conclusion
 
